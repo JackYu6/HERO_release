@@ -16,7 +16,7 @@ pip install mmcv-full==1.7.0 -f https://download.openmmlab.com/mmcv/dist/cu113/t
 ```
 
 ### 2. Models
-Visit [[Google Drive]](https://drive.google.com/file/d/1KEi6r7vIFnkoLLrZaN2ZKUzQFxxXIi75/view?usp=sharing) to download the models mannually, then unzip and place the result in `./checkpoints`.
+Visit [[Google Drive]](https://drive.google.com/file/d/1KEi6r7vIFnkoLLrZaN2ZKUzQFxxXIi75/view?usp=sharing) to download the models, then unzip and place the result in `./checkpoints`.
 
 ### 3. Dataset
 
@@ -98,7 +98,7 @@ python gen.py --gpu_id 0 --ext exp1 --dataset_name vimo --vq_name rvq_bs256_fine
     --video_path <path to the input video> --motion_length <the number of poses for generation>
 ```
 
-`motion_length` indicates the number of poses, which must be integeter and will be rounded by 4. The maximum value is 200.
+`motion_length` indicates the number of poses, which must be an integer and will be rounded by 4. The maximum value is 200.
 
 The generated motion and stick figure animation will be stored under folder `./generation/<ext>/`.
 
