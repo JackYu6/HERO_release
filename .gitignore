@@ -3,3 +3,4 @@ checkpoints
 generation
 log
 __pycache__
+*.zip
