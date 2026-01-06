@@ -162,6 +162,7 @@ if __name__ == '__main__':
 
     vq_model, vq_opt = load_vq_model()
     opt.num_tokens = vq_opt.nb_code
+    opt.num_quantizers = vq_opt.num_quantizers
 
     video_encoder = prepare_video_encoder(clip_version)
 
